@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-content">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}.</p>
+      <div class="footer-links">
+        {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        {% endif %}
+        {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        {% endif %}
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}">Email</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,42 @@
+# Site settings
+title: Shehzad Hathi
+author: Shehzad Hathi
+description: "Personal website of Shehzad Hathi — researcher and writer."
+baseurl: ""
+url: "https://pink-iguana.github.io"
+date_format: "%b %-d, %Y"
+
+# Navigation
+nav_pages:
+  - title: About
+    url: /
+  - title: Research
+    url: /research/
+  - title: Blog
+    url: /blog/
+
+# Social links
+github_username: pink-iguana
+twitter_username:
+linkedin_username:
+email: shehzad.hathi@gmail.com
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/blog/page:num/"
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - README.md
