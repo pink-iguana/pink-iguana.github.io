@@ -4,6 +4,7 @@ title: "What Do Number Theorists Do and Want in Life?"
 date: 2023-04-14
 categories: [essay, mathematics]
 image: "/assets/images/blog/number-theorists.png"
+featured: true
 ---
 
 *This article was first published on LinkedIn in three parts.*

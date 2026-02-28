@@ -3,6 +3,7 @@ layout: post
 title: "Bovine Belief"
 date: "2014-03-22"
 categories: [fiction]
+featured: true
 ---
 
 **Iguana:**

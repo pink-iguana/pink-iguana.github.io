@@ -10,6 +10,21 @@ date_format: "%b %-d, %Y"
 blog_title: "Pink Iguana Radio"
 blog_tagline: "You may have tuned in to this station by mistake. Please stay tuned."
 
+# Analytics (sign up at https://www.goatcounter.com/ and replace with your site code)
+# goatcounter_code: your-site-code
+
+# Comments (powered by Giscus — https://giscus.app/)
+# Enable GitHub Discussions on your repo, install Giscus app, then fill in:
+# giscus:
+#   repo: pink-iguana/pink-iguana.github.io
+#   repo_id: ""       # Get from https://giscus.app/
+#   category: "General"
+#   category_id: ""   # Get from https://giscus.app/
+#   mapping: pathname
+#   input_position: top
+#   theme: light
+#   lang: en
+
 # Navigation
 nav_pages:
   - title: About

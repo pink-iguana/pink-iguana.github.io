@@ -5,14 +5,16 @@ permalink: /blog/contact/
 ---
 
 <div class="blog-header">
-  <h1>{{ site.blog_title }}</h1>
-  <p class="blog-tagline">{{ site.blog_tagline }}</p>
-  <nav class="blog-nav">
-    <a href="{{ '/blog/' | relative_url }}">All Posts</a>
-    <a href="{{ '/blog/categories/' | relative_url }}">Categories</a>
-    <a href="{{ '/blog/about/' | relative_url }}">About</a>
-    <a href="{{ '/blog/contact/' | relative_url }}" class="active">Contact</a>
-  </nav>
+  <div class="blog-header-main">
+    <h1>{{ site.blog_title }}</h1>
+    <p class="blog-tagline">{{ site.blog_tagline }}</p>
+    <nav class="blog-nav">
+      <a href="{{ '/blog/' | relative_url }}">All Posts</a>
+      <a href="{{ '/blog/categories/' | relative_url }}">Categories</a>
+      <a href="{{ '/blog/about/' | relative_url }}">About</a>
+      <a href="{{ '/blog/contact/' | relative_url }}" class="active">Contact</a>
+    </nav>
+  </div>
 </div>
 
 <div class="blog-contact">
