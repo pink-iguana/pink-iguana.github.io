@@ -761,3 +761,69 @@ a.post-category:hover {
 .post-content h3 {
   margin-top: 2rem;
 }
+
+// Featured image in posts
+.post-featured-image {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .image-caption {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+}
+
+// Blog About page
+.blog-about {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+
+  .blog-cover-art {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 6px;
+  }
+
+  .license {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
+
+    img {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// Blog Contact page
+.blog-contact {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+
+  .contact-photo {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 6px;
+  }
+}
+
+// Active state for blog nav
+.blog-nav a.active {
+  font-weight: 600;
+  color: var(--color-primary);
+}

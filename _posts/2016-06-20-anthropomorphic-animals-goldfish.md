@@ -6,6 +6,8 @@ categories: [anthropomorphic animals]
 series: "Anthropomorphic Animals"
 series_part: 8
 series_title: "Anthropomorphic Animals"
+image: "/assets/images/blog/goldfish.png"
+image_caption: "The Aquarium (1856), Public Domain"
 ---
 
 *In this section, I ascribe human qualities to animals based on their physical appearance or behaviour and in a couple of lines reflect upon the part of the human society that the animal represents and/or the status of the animal itself.*

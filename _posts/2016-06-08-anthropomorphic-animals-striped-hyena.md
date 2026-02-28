@@ -6,6 +6,8 @@ categories: [anthropomorphic animals]
 series: "Anthropomorphic Animals"
 series_part: 2
 series_title: "Anthropomorphic Animals"
+image: "/assets/images/blog/striped-hyena.jpg"
+image_caption: "Striped Hyena, Public Domain"
 ---
 
 *In this section, I ascribe human qualities to animals based on their physical appearance or behaviour and in a couple of lines reflect upon the part of the human society that the animal represents and/or the status of the animal itself.*

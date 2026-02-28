@@ -17,6 +17,15 @@ layout: default
     </p>
   </header>
 
+  {% if page.image %}
+  <div class="post-featured-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_caption | default: page.title }}" />
+    {% if page.image_caption %}
+    <p class="image-caption">{{ page.image_caption }}</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
   {% include series-nav.html %}
 
   <div class="post-content">

@@ -3,6 +3,7 @@ layout: post
 title: "Final Test by Dilip D'Souza"
 date: 2015-11-26
 categories: [book review, cricket]
+image: "/assets/images/blog/final-test.jpg"
 ---
 
 *In November 2013, Sachin Tendulkar played his final test against the West Indies at the Wankhede. Final Test traces those fateful two and a half days, as Sachin takes to the pitch one last time.*

@@ -3,6 +3,7 @@ layout: post
 title: "The Rakta Queen — An Anantya Tantrist Mystery by Shweta Taneja"
 date: 2018-10-14
 categories: [book review]
+image: "/assets/images/blog/rakta-queen.jpeg"
 ---
 
 *A Kaula tantrik is brutally murdered by his chandaali slave. The same night, a group of university students lose their minds and perform an orchestrated orgy in front of the Vidhan Sabha metro station. To get to the truth, Anantya Tantrist, unofficial consultant with the Central Bureau of Investigation, must navigate her way past murderous sorcerers, deadly chandaalis, an underground betting scam run by jinns, and a renegade aghori teacher. As time slips through her fingers, Anantya must confront her past and rid it of its demons … before she meets a slow and painful death at the hands of her deadliest enemy yet.*
