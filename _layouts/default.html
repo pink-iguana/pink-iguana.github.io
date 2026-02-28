@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {% include footer.html %}
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    {% if site.goatcounter_code %}
+    <script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
+  </body>
+</html>

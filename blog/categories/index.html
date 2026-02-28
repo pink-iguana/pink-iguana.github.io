@@ -1,0 +1,52 @@
+---
+layout: default
+title: Categories
+permalink: /blog/categories/
+---
+
+<div class="blog-header">
+  <h1>{{ site.blog_title }}</h1>
+  <p class="blog-tagline">{{ site.blog_tagline }}</p>
+  <nav class="blog-nav">
+    <a href="{{ '/blog/' | relative_url }}">All Posts</a>
+    <a href="{{ '/blog/categories/' | relative_url }}" class="active">Categories</a>
+    <a href="{{ '/blog/about/' | relative_url }}">About</a>
+    <a href="{{ '/blog/contact/' | relative_url }}">Contact</a>
+  </nav>
+</div>
+
+<div class="categories-page">
+  <div class="category-index">
+    <h2>Categories</h2>
+    <ul class="category-list">
+      {% assign sorted_categories = site.categories | sort %}
+      {% for category in sorted_categories %}
+        <li>
+          <a href="#{{ category[0] | slugify }}">{{ category[0] }}</a>
+          <span class="category-count">({{ category[1].size }})</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% for category in sorted_categories %}
+  <div class="category-section" id="{{ category[0] | slugify }}">
+    <h2>{{ category[0] }}</h2>
+    <ul class="post-list">
+      {% for post in category[1] %}
+      <li class="post-list-item">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: site.date_format }}
+          </time>
+        </p>
+        {% if post.excerpt %}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

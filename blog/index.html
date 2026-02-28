@@ -1,0 +1,90 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-header blog-header--hero">
+  <div class="blog-header-main">
+    <h1>{{ site.blog_title }}</h1>
+    <p class="blog-tagline">{{ site.blog_tagline }}</p>
+    <nav class="blog-nav">
+      <a href="{{ '/blog/' | relative_url }}">All Posts</a>
+      <a href="{{ '/blog/categories/' | relative_url }}">Categories</a>
+      <a href="{{ '/blog/about/' | relative_url }}">About</a>
+      <a href="{{ '/blog/contact/' | relative_url }}">Contact</a>
+    </nav>
+    <div class="blog-search">
+      <input type="text" class="search-input" id="search-input" placeholder="🔍 Tune the Frequency — search posts..." autocomplete="off" />
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+  <div class="blog-header-art" aria-hidden="true">
+    <img src="{{ '/assets/images/blog/cover-art.png' | relative_url }}" alt="" />
+  </div>
+</div>
+
+{% assign featured_posts = site.posts | where: "featured", true %}
+{% if featured_posts.size > 0 %}
+<div class="favourite-episodes">
+  <h2>⭐ Favourite Episodes</h2>
+  <ul class="favourite-list">
+    {% for post in featured_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      <div class="favourite-meta">
+        {{ post.date | date: site.date_format }}
+        {% if post.categories.size > 0 %}
+          &middot;
+          {{ post.categories | join: ", " }}
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if paginator.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li class="post-list-item">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <p class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: site.date_format }}
+      </time>
+      {% if post.categories.size > 0 %}
+        &nbsp;&middot;&nbsp;
+        {% for cat in post.categories %}
+          <a href="{{ '/blog/categories/' | relative_url }}#{{ cat | slugify }}" class="post-category">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </p>
+    {% if post.excerpt %}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {% endif %}
+    <a class="post-read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer</a>
+  {% else %}
+    <span>&larr; Newer</span>
+  {% endif %}
+
+  <span class="current">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Older &rarr;</a>
+  {% else %}
+    <span>Older &rarr;</span>
+  {% endif %}
+</nav>
+{% endif %}
+
+{% else %}
+{% endif %}

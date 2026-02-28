@@ -1,0 +1,61 @@
+# Site settings
+title: Shehzad Hathi
+author: Shehzad Hathi
+description: "Personal website of Shehzad Hathi — researcher and writer."
+baseurl: ""
+url: "https://pink-iguana.github.io"
+date_format: "%b %-d, %Y"
+
+# Blog
+blog_title: "Pink Iguana Radio"
+blog_tagline: "You may have tuned in to this station by mistake. Please stay tuned."
+
+# Analytics (sign up at https://www.goatcounter.com/ and replace with your site code)
+# goatcounter_code: your-site-code
+
+# Comments (powered by Giscus — https://giscus.app/)
+# Enable GitHub Discussions on your repo, install Giscus app, then fill in:
+# giscus:
+#   repo: pink-iguana/pink-iguana.github.io
+#   repo_id: ""       # Get from https://giscus.app/
+#   category: "General"
+#   category_id: ""   # Get from https://giscus.app/
+#   mapping: pathname
+#   input_position: top
+#   theme: light
+#   lang: en
+
+# Navigation
+nav_pages:
+  - title: About
+    url: /
+  - title: Research
+    url: /research/
+  - title: Blog
+    url: /blog/
+
+# Social links
+github_username: pink-iguana
+twitter_username:
+linkedin_username:
+email: shehzad.hathi@gmail.com
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/blog/page:num/"
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - README.md
