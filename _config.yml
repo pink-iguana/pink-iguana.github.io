@@ -6,6 +6,10 @@ baseurl: ""
 url: "https://pink-iguana.github.io"
 date_format: "%b %-d, %Y"
 
+# Blog
+blog_title: "Pink Iguana Radio"
+blog_tagline: "You may have tuned in to this station by mistake. Please stay tuned."
+
 # Navigation
 nav_pages:
   - title: About
